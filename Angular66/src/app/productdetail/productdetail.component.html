@@ -1,0 +1,644 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body class="product-page">
+  <!-- HEADER -->
+  <div id="header" class="header">
+    <div class="top-header">
+        <div class="container">
+            <div class="nav-top-links">
+                <a class="first-item" href="#"><img alt="phone" src="assets/images/phone.png">00-62-658-658</a>
+                <a href="#"><img alt="email" src="assets/images/email.png">Contact us today!</a>
+            </div>
+            <div class="currency ">
+                <div class="dropdown">
+                      <a class="current-open" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">USD</a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Dollar</a></li>
+                        <li><a href="#">Euro</a></li>
+                      </ul>
+                </div>
+            </div>
+            <div class="language ">
+                <div class="dropdown">
+                      <a class="current-open" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                      <img alt="email" src="assets/images/fr.jpg">French
+                      
+                      </a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#"><img alt="email" src="assets/images/en.jpg">English</a></li>
+                        <li><a href="#"><img alt="email" src="assets/images/fr.jpg">French</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="support-link">
+                <a href="#">Services</a>
+                <a href="#">Support</a>
+            </div>
+
+            <div id="user-info-top" class="user-info pull-right">
+                <div class="dropdown">
+                    <a class="current-open" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><span>My Account</span></a>
+                    <ul class="dropdown-menu mega_dropdown" role="menu">
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="#">Compare</a></li>
+                        <li><a href="#">Wishlists</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/.top-header -->
+    <!-- MAIN HEADER -->
+    <div class="container main-header">
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 logo">
+                <a href="index.html"><img alt="Kute shop - themelot.net" src="assets/images/logo.png"></a>
+            </div>
+            <div class="col-xs-7 col-sm-7 header-search-box">
+                <form class="form-inline">
+                      <div class="form-group form-category">
+                          </div>
+                      <div class="form-group input-serach">
+                        <input type="text" placeholder="Keyword here...">
+                      </div>
+                      <button type="submit" class="pull-right btn-search"></button>
+                </form>
+            </div>
+            <div id="cart-block" class="col-xs-5 col-sm-2 shopping-cart-box">
+                <a class="cart-link" href="order.html">
+                    <span class="title">Shopping cart</span>
+                    <span class="total">2 items - 122.38 €</span>
+                    <span class="notify notify-left">2</span>
+                </a>
+                <div class="cart-block">
+                    <div class="cart-block-content">
+                        <h5 class="cart-title">2 Items in my cart</h5>
+                        <div class="cart-block-list">
+                            <ul>
+                                <li class="product-info">
+                                    <div class="p-left">
+                                        <a href="#" class="remove_link"></a>
+                                        <a href="#">
+                                        <img class="img-responsive" src="assets/data/product-100x122.jpg" alt="p10">
+                                        </a>
+                                    </div>
+                                    <div class="p-right">
+                                        <p class="p-name">Donec Ac Tempus</p>
+                                        <p class="p-rice">61,19 €</p>
+                                        <p>Qty: 1</p>
+                                    </div>
+                                </li>
+                                <li class="product-info">
+                                    <div class="p-left">
+                                        <a href="#" class="remove_link"></a>
+                                        <a href="#">
+                                        <img class="img-responsive" src="assets/data/product-s5-100x122.jpg" alt="p10">
+                                        </a>
+                                    </div>
+                                    <div class="p-right">
+                                        <p class="p-name">Donec Ac Tempus</p>
+                                        <p class="p-rice">61,19 €</p>
+                                        <p>Qty: 1</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="toal-cart">
+                            <span>Total</span>
+                            <span class="toal-price pull-right">122.38 €</span>
+                        </div>
+                        <div class="cart-buttons">
+                            <a href="order.html" class="btn-check-out">Checkout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- END MANIN HEADER -->
+    <div id="nav-top-menu" class="nav-top-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3" id="box-vertical-megamenus">
+                    <div class="box-vertical-megamenus">
+                        <h4 class="title" style="margin-top: 1px">
+                            <span class="title-menu" >Categories</span>
+                            <span class="btn-open-mobile pull-right home-page"><i class="fa fa-bars"></i></span>
+                        </h4>
+                   
+                </div>
+                </div>
+                <div id="main-menu" class="col-sm-9 main-menu">
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <i class="fa fa-bars"></i>
+                                </button>
+                                <a class="navbar-brand" href="#">MENU</a>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="#">Home</a></li>
+                                    
+                                    <li _ngcontent-che-c2="" ><a _ngcontent-che-c2="" (click)="NevigateToProfile()">My Profile</a></li>
+                                    <li _ngcontent-che-c2="" ><a _ngcontent-che-c2="" (click)="NevigateToMyPost()">My Posts</a></li>
+                                    <li _ngcontent-che-c2=""><a _ngcontent-che-c2=""  (click)="NevigateToBids()">My Bids</a></li>
+                                    <li _ngcontent-che-c2="" ><a _ngcontent-che-c2=""  (click)="NevigateToMakePost()">Make Post</a></li>
+                                   
+                                    
+                                   
+                                </ul>
+                            </div><!--/.nav-collapse -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- userinfo on top-->
+            <div id="form-search-opntop">
+            </div>
+            <!-- userinfo on top-->
+            <div id="user-info-opntop">
+            </div>
+            <!-- CART ICON ON MMENU -->
+            
+        </div>
+    </div>
+</div>
+  <!-- end header -->
+
+  <div class="columns-container">
+    <div class="container" id="columns">
+      <!-- breadcrumb -->
+      
+      <!-- ./breadcrumb -->
+      <!-- row -->
+      <div class="row">
+
+        <!-- Center colunm-->
+        <div class="center_column col-xs-12 col-sm-12" id="center_column">
+          <!-- Product -->
+          <div id="product">
+            <div class="primary-box row">
+              <div class="pb-left-column col-xs-12 col-sm-5">
+                <!-- product-imge-->
+                <div class="product-image">
+                  <div class="product-full">
+                    <img id="product-zoom" src="assets/data/product-s3-420x512.jpg"
+                      data-zoom-image="assets/data/product-s3-850x1036.jpg">
+                  </div>
+                  
+                </div>
+                <!-- product-imge-->
+              </div>
+              
+              <div class="pb-right-column col-xs-12 col-sm-7">
+                <h1 class="product-name">{{postService.post.title}}</h1>
+                <div class="product-comments">
+                  <div class="product-star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                  </div>
+                  <div class="comments-advices">
+                    <a href="#">Based on 3 ratings</a>
+                    <a href="#"><i class="fa fa-pencil"></i> write a review</a>
+                  </div>
+                </div>
+                <div class="product-price-group">
+                  <span class="price">Desired RS/{{postService.post.amount}}</span>
+
+                </div>
+
+                <div class="product-desc">
+                  {{postService.post.description}}
+                </div>
+                <div class="form-option">
+                  <p class="form-option-title">Available Options:</p>
+                  <div class="attributes">
+                    <div class="attribute-label"> Bid:</div>
+
+                    <input type="text" class="float-right" #amount="ngModel" [(ngModel)]="bidService.selectedUserBid.amount" name="amount" placeholder="RS">
+                    
+                  </div>
+                  <div>
+
+                  </div>
+
+
+                </div>
+                <div class="form-action">
+                  <div class="button-group">
+                    <a class="btn-add-cart" (click)='PlaceBid()'>Place BID</a>
+                  </div>
+                  <div class="button-group">
+                    <a class="wishlist" href="#"><i class="fa fa-heart-o"></i>
+
+                    </a></div><a class="wishlist" href="#">
+                  </a>
+                </div><a class="wishlist" href="#">
+
+
+                  <div class="network-share">
+                  </div>
+                </a>
+              </div><a class="wishlist" href="#">
+              </a>
+            </div><a class="wishlist" href="#">
+            </a>
+            <input type="text"  #amount="ngModel" [(ngModel)]="bidService.selectedUserBid.amount" name="amount" placeholder="RS">
+              <button type="button" (click)="PlaceBid()">Place Bid</button>
+          </div><a class="wishlist" href="#">
+            <!-- tab product -->
+            <div class="product-tab">
+              
+              <table id="example" class="table table-bordered table-responsive cart_summary">
+                <thead>
+                  <tr>
+                    <th class="cart_product">Product</th>
+                    <th>Buyer Details</th>
+                    <th>Status</th>
+                    <th>Seller Ratings</th>
+                    <th>Bid Rank</th>
+                    <th>Amount</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let bid of bidService.bids">
+                    <td class="cart_product">
+                      <a href="#"><img src="assets/data/product-100x122.jpg" alt="Product"></a>
+                    </td>
+                    <td class="cart_description">
+                      <p class="product-name"><a href="#">{{bid.email}} </a></p>
+
+                    </td>
+                    <td class="cart_avail"><span class="label label-success">Active</span></td>
+                    <td class="price"><span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span></td>
+                    <td class="qty">
+                      <p class="product-name">{{bid.rank}} </p>
+
+                    </td>
+                    <td class="price">
+                      <span>{{bid.amount}}</span>
+                      
+                    </td>
+
+                  </tr>
+                </tbody>
+
+              </table>
+            </div>
+            
+
+          </a>
+          <input type="text" #description="ngModel" [(ngModel)]="spamService.selectedSpamReport.description" name="description" placeholder="Description">
+            <a (click)="PlaceSpamReport()">Report Spam</a>
+
+            <input type="text" #description="ngModel" [(ngModel)]="reviewService.selectedReview.description"
+                name="description" placeholder="Description">
+                <input type="text" #rating="ngModel" [(ngModel)]="reviewService.selectedReview.rating"
+                name="rating" placeholder="Rating">
+              <a (click)="PlaceReview()">Make Review</a> 
+
+
+
+              <table id="example" class="table table-bordered table-responsive cart_summary">
+                <thead>
+                  <tr>
+                    <th>Review</th>
+                    <th>Rating</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let review of reviewService.reviews">
+                    <td>
+                      <p class="product-name">{{review.description}} </p>
+                    </td>
+                    <td class="price">
+                      <span>{{review.rating}}</span>
+                    </td>
+                    <td *ngIf="review.user==postService.post.user" class="price">
+                        <a (click)=onDelete(review._id)>Delete this Review</a>
+                      </td>
+                  </tr>
+                </tbody>
+
+              </table>
+                
+        </div><a class="wishlist" href="#">
+          <!-- Product -->
+        </a>
+      </div><a class="wishlist" href="#">
+        <!-- ./ Center colunm -->
+      </a>
+    </div><a class="wishlist" href="#">
+      <!-- ./row-->
+    </a>
+  </div><a class="wishlist" href="#">
+
+
+    <!-- Footer -->
+  </a>
+  <footer id="footer"><a class="wishlist" href="#">
+    </a>
+    <div class="container"><a class="wishlist" href="#">
+        <!-- introduce-box -->
+      </a>
+      <div id="introduce-box" class="row"><a class="wishlist" href="#">
+        </a>
+        <div class="col-md-3"><a class="wishlist" href="#">
+          </a>
+          <div id="address-box"><a class="wishlist" href="#">
+            </a><a href="#"><img src="assets/data/introduce-logo.png" alt=""></a>
+            <div id="address-list">
+              <div class="tit-name">Address:</div>
+              <div class="tit-contain">Example Street 68, Mahattan, New York, USA.</div>
+              <div class="tit-name">Phone:</div>
+              <div class="tit-contain">+00 123 456 789</div>
+              <div class="tit-name">Email:</div>
+              <div class="tit-contain">support@business.com</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="introduce-title">Company</div>
+              <ul id="introduce-company" class="introduce-list">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Affiliate Program</a></li>
+                <li><a href="#">Terms &amp; Conditions</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4">
+              <div class="introduce-title">My Account</div>
+              <ul id="introduce-Account" class="introduce-list">
+                <li><a href="#">My Order</a></li>
+                <li><a href="#">My Wishlist</a></li>
+                <li><a href="#">My Credit Slip</a></li>
+                <li><a href="#">My Addresses</a></li>
+                <li><a href="#">My Personal In</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4">
+              <div class="introduce-title">Support</div>
+              <ul id="introduce-support" class="introduce-list">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Affiliate Program</a></li>
+                <li><a href="#">Terms &amp; Conditions</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div id="contact-box">
+            <div class="introduce-title">Newsletter</div>
+            <div class="input-group" id="mail-box">
+              <input type="text" placeholder="Your Email Address">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button">OK</button>
+              </span>
+            </div><!-- /input-group -->
+            <div class="introduce-title">Let's Socialize</div>
+            <div class="social-link">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-pinterest-p"></i></a>
+              <a href="#"><i class="fa fa-vk"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-google-plus"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div><!-- /#introduce-box -->
+
+      <!-- #trademark-box -->
+      <div id="trademark-box" class="row">
+        <div class="col-sm-12">
+          <ul id="trademark-list">
+            <li id="payment-methods">Accepted Payment Methods</li>
+            <li>
+              <a href="#"><img src="assets/data/trademark-ups.jpg" alt="ups"></a>
+            </li>
+            <li>
+              <a href="#"><img src="assets/data/trademark-qiwi.jpg" alt="ups"></a>
+            </li>
+            <li>
+              <a href="#"><img src="assets/data/trademark-wu.jpg" alt="ups"></a>
+            </li>
+            <li>
+              <a href="#"><img src="assets/data/trademark-cn.jpg" alt="ups"></a>
+            </li>
+            <li>
+              <a href="#"><img src="assets/data/trademark-visa.jpg" alt="ups"></a>
+            </li>
+            <li>
+              <a href="#"><img src="assets/data/trademark-mc.jpg" alt="ups"></a>
+            </li>
+            <li>
+              <a href="#"><img src="assets/data/trademark-ems.jpg" alt="ups"></a>
+            </li>
+            <li>
+              <a href="#"><img src="assets/data/trademark-dhl.jpg" alt="ups"></a>
+            </li>
+            <li>
+              <a href="#"><img src="assets/data/trademark-fe.jpg" alt="ups"></a>
+            </li>
+            <li>
+              <a href="#"><img src="assets/data/trademark-wm.jpg" alt="ups"></a>
+            </li>
+          </ul>
+        </div>
+      </div> <!-- /#trademark-box -->
+
+      <!-- #trademark-text-box -->
+      <div id="trademark-text-box" class="row">
+        <div class="col-sm-12">
+          <ul id="trademark-search-list" class="trademark-list">
+            <li class="trademark-text-tit">HOT SEARCHED KEYWORDS:</li>
+            <li><a href="#">Xiaomio Mi3</a></li>
+            <li><a href="#">Digiflipo Pro XT 712 Tablet</a></li>
+            <li><a href="#">Mi 3 Phones</a></li>
+            <li><a href="#">Iphoneo 6 Plus</a></li>
+            <li><a href="#">Women's Bags</a></li>
+            <li><a href="#">Wallets</a></li>
+            <li><a href="#">Women's Clutches</a></li>
+            <li><a href="#">Backpacks Totes</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-12">
+          <ul id="trademark-tv-list" class="trademark-list">
+            <li class="trademark-text-tit">TVS:</li>
+            <li><a href="#">Sonyo TV</a></li>
+            <li><a href="#">Samsong TV</a></li>
+            <li><a href="#">LGo TV</a></li>
+            <li><a href="#">Onidao TV</a></li>
+            <li><a href="#">Toshibao TV</a></li>
+            <li><a href="#">Philipso TV</a></li>
+            <li><a href="#">Micromaxo TV</a></li>
+            <li><a href="#">LED TV</a></li>
+            <li><a href="#">LCD TV</a></li>
+            <li><a href="#">Plasma TV</a></li>
+            <li><a href="#">3D TV</a></li>
+            <li><a href="#">Smart TV</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-12">
+          <ul id="trademark-mobile-list" class="trademark-list">
+            <li class="trademark-text-tit">MOBILES:</li>
+            <li><a href="#">Moto E</a></li>
+            <li><a href="#">Samsong Mobile</a></li>
+            <li><a href="#">Micromaxo Mobile</a></li>
+            <li><a href="#">Nokiao Mobile</a></li>
+            <li><a href="#">HTCo Mobile</a></li>
+            <li><a href="#">Sonyo Mobile</a></li>
+            <li><a href="#">Appleo Mobile</a></li>
+            <li><a href="#">LGo Mobile</a></li>
+            <li><a href="#">Karbonno Mobile</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-12">
+          <ul id="trademark-laptop-list" class="trademark-list">
+            <li class="trademark-text-tit">LAPTOPS::</li>
+            <li><a href="#">Appleo Laptop</a></li>
+            <li><a href="#">Acero Laptop</a></li>
+            <li><a href="#">Samsong Laptop</a></li>
+            <li><a href="#">Lenovoo Laptop</a></li>
+            <li><a href="#">Sonyo Laptop</a></li>
+            <li><a href="#">Dello Laptop</a></li>
+            <li><a href="#">Asuso Laptop</a></li>
+            <li><a href="#">Toshibao Laptop</a></li>
+            <li><a href="#">LGo Laptop</a></li>
+            <li><a href="#">HPo Laptop</a></li>
+            <li><a href="#">Notebook</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-12">
+          <ul id="trademark-watches-list" class="trademark-list">
+            <li class="trademark-text-tit">WATCHES:</li>
+            <li><a href="#">FCUKo Watches</a></li>
+            <li><a href="#">Titan Watches</a></li>
+            <li><a href="#">Casioo Watches</a></li>
+            <li><a href="#">Fastracko Watches</a></li>
+            <li><a href="#">Timexo Watches</a></li>
+            <li><a href="#">Fossilo Watches</a></li>
+            <li><a href="#">Dieselo Watches</a></li>
+            <li><a href="#">Toshibao Laptop</a></li>
+            <li><a href="#">Luxury Watches</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-12">
+          <ul id="trademark-shoes-list" class="trademark-list">
+            <li class="trademark-text-tit">FOOTWEAR:</li>
+            <li><a href="#">Shoes</a></li>
+            <li><a href="#">Casual Shoes</a></li>
+            <li><a href="#">Sports Shoes</a></li>
+            <li><a href="#">Adidaso Shoes</a></li>
+            <li><a href="#">Gaso Shoes</a></li>
+            <li><a href="#">Pumao Shoes</a></li>
+            <li><a href="#">Reeboko Shoes</a></li>
+            <li><a href="#">Woodlando Shoes</a></li>
+            <li><a href="#">Red tape Shoes</a></li>
+            <li><a href="#">Nikeo Shoes</a></li>
+          </ul>
+        </div>
+      </div><!-- /#trademark-text-box -->
+      <div id="footer-menu-box">
+        <div class="col-sm-12">
+          <ul class="footer-menu-list">
+            <li><a href="#">Company Info - Partnerships</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-12">
+          <ul class="footer-menu-list">
+            <li><a href="#">Online Shopping</a></li>
+            <li><a href="#">Promotions</a></li>
+            <li><a href="#">My Orders</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Site Map</a></li>
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-12">
+          <ul class="footer-menu-list">
+            <li><a href="#">Most Populars</a></li>
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Special Products</a></li>
+            <li><a href="#">Manufacturers</a></li>
+            <li><a href="#">Our Stores</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Payments</a></li>
+            <li><a href="#">Warantee</a></li>
+            <li><a href="#">Refunds</a></li>
+            <li><a href="#">Checkout</a></li>
+            <li><a href="#">Discount</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-12">
+          <ul class="footer-menu-list">
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Policy</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Payments</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Refunds</a></li>
+            <li><a href="#">Warrantee</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <p class="text-center">Copyrights © 2015 KuteShop. All Rights Reserved. Designed by KuteThemes.com</p>
+      </div><!-- /#footer-menu-box -->
+    </div>
+  </footer>
+
+  <a href="#" class="scroll_top" title="Scroll to Top" style="display: none;">Scroll</a>
+  <!-- Script-->
+  <script type="text/javascript" src="assets/lib/jquery/jquery-1.11.2.min.js"></script>
+
+  <script type="text/javascript" src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/lib/select2/js/select2.min.js"></script>
+  <script type="text/javascript" src="assets/lib/jquery.bxslider/jquery.bxslider.min.js"></script>
+  <script type="text/javascript" src="assets/lib/owl.carousel/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="assets/lib/jquery.countdown/jquery.countdown.min.js"></script>
+  <script type="text/javascript" src="assets/lib/jquery.elevatezoom.js"></script>
+
+  <script type="text/javascript" src="assets/lib/jquery-ui/jquery-ui.min.js"></script>
+
+  <script type="text/javascript" src="assets/lib/fancyBox/jquery.fancybox.js"></script>
+
+  <script type="text/javascript" src="assets/js/jquery.actual.min.js"></script>
+
+
+  <script type="text/javascript" src="assets/js/theme-script.js"></script>
+
+
+  <div class="zoomContainer"
+    style="-webkit-transform: translateZ(0);position:absolute;left:438.8000183105469px;top:273.13336181640625px;height:512px;width:420px;">
+    <div class="zoomWindowContainer" style="width: 400px;">
+      <div
+        style="z-index: 999; overflow: hidden; margin-left: 0px; margin-top: 0px; background-position: -430px -160.558px; width: 420px; height: 512px; float: left; cursor: crosshair; background-repeat: no-repeat; position: absolute; background-image: url(&quot;assets/data/product-s3-850x1036.jpg&quot;); top: 0px; left: 0px; display: none;"
+        class="zoomWindow">&nbsp;</div>
+    </div>
+  </div>
+</body>

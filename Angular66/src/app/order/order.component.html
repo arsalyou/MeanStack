@@ -1,0 +1,98 @@
+<div class="content-wrapper" style="min-height: 464px;">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">Users Data</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">Users Data</li>
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <!-- Small boxes (Stat box) -->
+            <div class="box box-primary">
+
+                <!-- /.box-header -->
+                <!-- form start -->
+                <form #MakeProfileForm="ngForm" (ngSubmit)="MakeProfileForm.valid && onSubmit(MakeProfileForm)">
+
+
+                    <div class="box-body">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Post_id</label>
+                            <input type="text" #post_id="ngModel" [(ngModel)]="orderService.selectedUserOrder.post_id"
+                                name="post_id" placeholder="post_id" required
+                                [ngClass]="{'invalid-textbox' :MakeProfileForm.submitted && !post_id.valid }">
+                            <div *ngIf="MakeProfileForm.submitted && !post_id.valid">
+                                <label class="validation-message">This field is required.</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Name</label>
+                            <input type="text" #name="ngModel"
+                                [(ngModel)]="orderService.selectedUserOrder.name" name="name"
+                                placeholder="name" required
+                                [ngClass]="{'invalid-textbox' :MakeProfileForm.submitted && !name.valid }">
+                            <div *ngIf="MakeProfileForm.submitted && !name.valid">
+                                <label class="validation-message">This field is required.</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Address</label>
+                            <input type="text" #address="ngModel"
+                                [(ngModel)]="orderService.selectedUserOrder.address" name="address"
+                                placeholder="address" required
+                                [ngClass]="{'invalid-textbox' :MakeProfileForm.submitted && !address.valid }">
+                            <div *ngIf="MakeProfileForm.submitted && !address.valid">
+                                <label class="validation-message">This field is required.</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Phone no</label>
+                            <input type="text" #phoneno="ngModel" [(ngModel)]="orderService.selectedUserOrder.phoneno"
+                                name="phoneno" placeholder="phoneno" required
+                                [ngClass]="{'invalid-textbox' :MakeProfileForm.submitted && !phoneno.valid }">
+                            <div *ngIf="MakeProfileForm.submitted && !phoneno.valid">
+                                <label class="validation-message">This field is required.</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="form-control" id="exampleInputPassword1" placeholder="Business">
+                        </div>
+
+
+                    </div>
+                    <!-- /.box-body -->
+
+
+                </form>
+            </div>
+            <!-- /.row -->
+            <!-- Main row -->
+
+            <!-- /.row (main row) -->
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>
+
+<!-- Success message -->
+<div class="success" *ngIf="showSucessMessage">
+    Saved successfully
+</div>
+
+<!-- Error message -->
+<div class="alert" *ngIf="serverErrorMessages">
+    {{serverErrorMessages}}
+</div>

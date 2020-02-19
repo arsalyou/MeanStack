@@ -1,0 +1,108 @@
+<div class="content-wrapper" style="min-height: 464px;">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0 text-dark">Users Data</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Users Data</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- Small boxes (Stat box) -->
+        <div class="box box-primary">
+            
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form #MakePostForm="ngForm" (ngSubmit)="MakePostForm.valid && onSubmit(MakePostForm)" role="form">
+              <div class="box-body">
+                  <input type="hidden" #user="ngModel" [(ngModel)]="postService.selectedUserPost.user" name="user" placeholder="user"
+                  required [ngClass]="{'invalid-textbox' :MakePostForm.submitted && !user.valid }">
+                <div *ngIf="MakePostForm.submitted && !user.valid">
+                  <label class="validation-message">This field is required.</label>
+                </div>
+                    <div class="form-group">
+                            <label for="exampleInputFile">Upload Picture</label>
+                            <input type="file" id="exampleInputFile">
+          
+                            
+                          </div>
+              
+                          <div class="form-group">
+                                <label for="exampleInputEmail1">Title</label>
+                                <input type="text" #title="ngModel" [(ngModel)]="postService.selectedUserPost.title" name="title" placeholder="title"
+                                required [ngClass]="{'invalid-textbox' :MakePostForm.submitted && !title.valid }">
+                              <div *ngIf="MakePostForm.submitted && !title.valid">
+                                <label class="validation-message">This field is required.</label>
+                              </div>   </div>
+                
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Description</label>
+                    <input type="text" #description="ngModel" [(ngModel)]="postService.selectedUserPost.description" name="description"
+                    placeholder="description" required [ngClass]="{'invalid-textbox' :MakePostForm.submitted && !description.valid }">
+                  <div *ngIf="MakePostForm.submitted && !description.valid">
+                    <label class="validation-message">This field is required.</label>
+                  </div>
+                 
+                  </div>
+                  <div class="form-group">
+                        <label for="exampleInputEmail1">Desired Price</label>
+                      
+                        <input type="text" #amount="ngModel" [(ngModel)]="postService.selectedUserPost.amount" name="amount"
+    placeholder="amount" required [ngClass]="{'invalid-textbox' :MakePostForm.submitted && !amount.valid }">
+  <div *ngIf="MakePostForm.submitted && !city.valid">
+    <label class="validation-message">This field is required.</label>
+  </div>
+                      </div>
+                      <div class="form-group">
+                            <label for="exampleInputEmail1">Date</label>
+                            
+  <input type="text" #date="ngModel" [(ngModel)]="postService.selectedUserPost.date" name="date" placeholder="date"
+  required [ngClass]="{'invalid-textbox' :MakePostForm.submitted && !date.valid }">
+<div *ngIf="MakePostForm.submitted && !date.valid">
+  <label class="validation-message">This field is required.</label>
+</div>
+                         </div>
+                
+               
+              </div>
+              <!-- /.box-body -->
+
+              <div class="box-footer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        <!-- /.row -->
+        <!-- Main row -->
+        
+        <!-- /.row (main row) -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+
+
+
+
+
+<!-- Success message -->
+<div class="success" *ngIf="showSucessMessage">
+  Saved successfully
+</div>
+
+<!-- Error message -->
+<div class="alert" *ngIf="serverErrorMessages">
+  {{serverErrorMessages}}
+</div>

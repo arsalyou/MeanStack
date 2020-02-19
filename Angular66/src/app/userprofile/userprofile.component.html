@@ -1,0 +1,24 @@
+<table class="responsive-table highlight">
+    <thead>
+        <tr>
+            <th>email</th>
+            <th>name</th>
+            <th>Country</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tr>
+        <td>{{profileService.profiles.emailAddress}}</td>
+        <td>{{profileService.profiles.name}}</td>
+        <td>{{profileService.profiles.country}}</td>
+        <td>
+            <a class="action-btn" (click)="onEdit(post)">
+                <i class="material-icons">edit</i>
+            </a>
+            <a class="action-btn" (click)="onDelete(post._id)">
+                <i class="material-icons">delete</i>
+            </a>
+        </td>
+    </tr>
+</table>
+
